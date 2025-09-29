@@ -20,8 +20,8 @@
     }
 
     .container {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 1rem;
       padding: 1rem;
     }
@@ -31,6 +31,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       padding: 1rem;
+      flex: 1;
     }
 
     .class-card h3 {
@@ -43,7 +44,7 @@
     }
 
     .enroll-btn {
-     ;
+      display: block;
       width: 100%;
       padding: 0.5rem;
       background-color: #2e86de;
@@ -68,16 +69,16 @@
       color: #888;
     }
 
-    /* Responsive layout for tablets and desktops */
-    @media (min-width: 600px) {
+    /* Desktop layout */
+    @media (min-width: 768px) {
       .container {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
-    }
 
-    @media (min-width: 900px) {
-      .container {
-        grid-template-columns: repeat(3, 1fr);
+      .class-card {
+        width: calc(33% - 1rem);
       }
     }
   </style>
@@ -94,19 +95,21 @@
       <h3>Mathematics (Grade 10)</h3>
       <p>Instructor: Mr. Lee</p>
       <p>Time: Mon & Wed, 5–6 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZ</div>
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5/a>
+    </div>
 
     <div class="class-card">
       <h3>English Literature (Grade 12)</h3>
       <p>Instructor: Ms. Chan</p>
       <p>Time: Tue & Thu, 4–5 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blanklass-card">
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAJVTU5EQUVCTEZCVDhIQS4uEnroll Now</a>
+    </div>
+
+    <div class="class-card">
       <h3>Physics (Grade 11)</h3>
       <p>Instructor: Dr. Wong</p>
       <p>Time: Sat, 10 AM–12 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u</div>
-
-  <footer>
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blankr>
     &copy; 2025 TuitionFinder. All rights reserved.
   </footer>
 
