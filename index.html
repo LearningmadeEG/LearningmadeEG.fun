@@ -20,6 +20,9 @@
     }
 
     .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
       padding: 1rem;
     }
 
@@ -27,7 +30,6 @@
       background-color: white;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 1rem;
       padding: 1rem;
     }
 
@@ -41,7 +43,7 @@
     }
 
     .enroll-btn {
-      display: block;
+     ;
       width: 100%;
       padding: 0.5rem;
       background-color: #2e86de;
@@ -65,6 +67,19 @@
       font-size: 0.9rem;
       color: #888;
     }
+
+    /* Responsive layout for tablets and desktops */
+    @media (min-width: 600px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,23 +94,17 @@
       <h3>Mathematics (Grade 10)</h3>
       <p>Instructor: Mr. Lee</p>
       <p>Time: Mon & Wed, 5–6 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blank">Enroll Now</a>
-    </div>
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZ</div>
 
     <div class="class-card">
       <h3>English Literature (Grade 12)</h3>
       <p>Instructor: Ms. Chan</p>
       <p>Time: Tue & Thu, 4–5 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blank">Enroll Now</a>
-    </div>
-
-    <div class="class-card">
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blanklass-card">
       <h3>Physics (Grade 11)</h3>
       <p>Instructor: Dr. Wong</p>
       <p>Time: Sat, 10 AM–12 PM</p>
-      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u" target="_blank">Enroll Now</a>
-    </div>
-  </div>
+      <a class="enroll-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFugPzjnExUNDlVMTFCUUM4RlJVTU5EQUVCTEZCVDhIQS4u</div>
 
   <footer>
     &copy; 2025 TuitionFinder. All rights reserved.
